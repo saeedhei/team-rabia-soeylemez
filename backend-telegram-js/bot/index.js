@@ -12,3 +12,4 @@ bot.on('message', (msg) => {
 bot.onText(/^[/]start$/, async (msg) => { 
   await bot.sendMessage(msg.chat.id, `Hi.`);
  });
+ //Test
