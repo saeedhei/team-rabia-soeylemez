@@ -10,7 +10,7 @@ const StartKeyboard = [
 
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
-  // bot.sendMessage(chatId, 'Received your message');
+  bot.sendMessage(chatId, 'Received your message');
 });
 
 bot.onText(/^[/]start$/, async (msg) => { 
