@@ -8,10 +8,10 @@ const StartKeyboard = [
   ['🇩🇪 German', '🇺🇸 English']
 ];
 
-bot.on('message', (msg) => {
-  const chatId = msg.chat.id;
-  bot.sendMessage(chatId, 'Received your message');
-});
+// bot.on('message', (msg) => {
+//   const chatId = msg.chat.id;
+//   bot.sendMessage(chatId, 'Received your message');
+// });
 
 bot.onText(/^[/]start$/, async (msg) => { 
   const opts = {
@@ -23,3 +23,10 @@ bot.onText(/^[/]start$/, async (msg) => {
   };
   await bot.sendMessage(msg.chat.id, `Hi ${msg.from.first_name} 😊\n\nWelcome to our Telegram bot! ❤️❤️❤️\nPlease select a menu:`, opts);
  });
+
+ bot.onText('🇩🇪 German', async (msg)=>{
+  await bot.sendMessage(msg.chat.id, `Hallo, was möchtest du mich fragen?`);
+ })
+ bot.onText('🇺🇸 English', async (msg)=>{
+  await bot.sendMessage(msg.chat.id, `Hello, what do you want to ask me?`);
+ })
