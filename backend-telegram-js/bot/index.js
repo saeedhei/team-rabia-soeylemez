@@ -23,3 +23,4 @@ bot.onText(/^[/]start$/, async (msg) => {
   };
   await bot.sendMessage(msg.chat.id, `Hi ${msg.from.first_name} 😊\n\nWelcome to our Telegram bot! ❤️❤️❤️\nPlease select a menu:`, opts);
  });
+ // Update by Saeed

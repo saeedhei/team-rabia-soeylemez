@@ -2,3 +2,4 @@ node_modules
 dist
 .env
 no
+backend-telegram-js/package-lock.json
