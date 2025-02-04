@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-  "start": "node index.js",
-  "dev": "nodemon index.js"
-},
+    "start": "node ./bin/www",
+    "dev": "nodemon"
+  },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
